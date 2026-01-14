@@ -1,0 +1,26 @@
+{
+  "name": "icscream",
+  "version": "0.0.1",
+  "description": "Modify iCalendar/ics files using Typescript",
+  "license": "AGPL-3.0-only",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://sc07.dev/grant/icscream.git"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.13",
+    "@types/node": "^24.10.1",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  },
+  "scripts": {
+    "dev": "tsx --watch src/index.ts",
+    "build": "tsc"
+  },
+  "packageManager": "yarn@4.12.0"
+}

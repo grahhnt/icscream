@@ -1,0 +1,11 @@
+publish:
+  stage: deploy
+  image: node:24-alpine
+  rules:
+    - if: $CI_PIPELINE_SOURCE != "merge_request_event" && $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  before_script:
+    - corepack enable && corepack prepare
+    - yarn
+  script:
+    - yarn build
+    - yarn npm publish
