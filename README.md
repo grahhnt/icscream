@@ -11,9 +11,13 @@ npm install icscream
 ```typescript
 import { parseICS } from "icscream";
 
-const icsData = await fetch("https://example.com/calendar.ics");
+const icsData = await fetch("https://example.com/calendar.ics").then(res => res.text());
 const vcalendar = parseICS("VCALENDAR", icsData);
 ```
+
+## Examples
+
+Check the [/examples/README.md](https://sc07.dev/grant/icscream/-/blob/main/examples/README.md?ref_type=heads)
 
 ## Contributing
 

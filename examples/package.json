@@ -1,0 +1,14 @@
+{
+  "name": "icscream-examples",
+  "private": true,
+  "dependencies": {
+    "icscream": "file:..",
+    "tsdav": "^2.1.6"
+  },
+  "devDependencies": {
+    "tsx": "^4.21.0"
+  },
+  "scripts": {
+    "merge": "tsx src/merge-ics.ts"
+  }
+}
